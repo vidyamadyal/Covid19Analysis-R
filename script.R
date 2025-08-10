@@ -1,7 +1,7 @@
 rm(list=ls())
 library(Hmisc) 
 
-data <- read.csv("C:/Users/mykyt/Desktop/covid_R/COVID19_line_list_data.csv")
+data <- read.csv("C:/Users/madya.PC/Desktop/covid_r/COVID19_line_list_data.csv")
 describe(data) 
 
 
@@ -19,6 +19,7 @@ women = subset(data, gender == "female")
 mean(men$death_dummy, na.rm = TRUE)
 mean(women$death_dummy, na.rm = TRUE) 
 t.test(men$death_dummy, women$death_dummy, alternative="two.sided", conf.level = 0.99)
+
 
 
 
